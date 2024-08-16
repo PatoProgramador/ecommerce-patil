@@ -6,11 +6,11 @@ export const ContainerLayout = styled.div`
 
 export const HeaderLayout = styled.div`
   display: flex;
-  height: 90px;
+  height: 120px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 24px 16px 24px;
+  padding: 16px 30px 16px 40px;
   gap: 8px;
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(16px);
@@ -21,13 +21,13 @@ interface ImageLayoutProps {
   h?: string;
 }
 export const ImageLayout = styled.img<ImageLayoutProps>`
-  width: ${(props) => props.w || '130px'};
-  height: ${(props) => props.h || '22.03px'};
+  width: ${(props) => props.w || '120px'};
+  height: ${(props) => props.h || '85px'};
 `
 
 export const SecondImageLayout = styled.img<ImageLayoutProps>`
-  width: ${(props) => props.w || '130px'};
-  height: ${(props) => props.h || '22.03px'};
+  width: ${(props) => props.w || '200px'};
+  height: ${(props) => props.h || '60px'};
 `
 
 interface TextLayoutProps {

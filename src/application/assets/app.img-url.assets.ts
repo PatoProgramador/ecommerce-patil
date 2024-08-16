@@ -10,4 +10,6 @@ export class AppImgUrlAssets {
 
   inLogo = '/assets/images/inLogo.svg'
   gitLogo = '/assets/images/gitLogo.svg'
+  patoLogo = '/assets/images/patoProgramador.png'
+  shoppingCart = '/assets/images/shopping-cart.svg'
 }

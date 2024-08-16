@@ -1,38 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { GeneralContainer } from '@app/components/general-container-component/general-container.styled'
 import ProductCardComponent from '@app/components/product-card-component/ProductCardComponent'
 import { IProductDto } from '@mod/product-detail/services/product.dto'
+import { ProductService } from './services/get-products.service'
 
 export const HomeView: React.FC<{}> = () => {
-  // const [apiProducts, setApiProducts] = useState('')
+  const [apiProducts, setApiProducts] = useState<IProductDto[]>([])
 
-  const exProduct: IProductDto = {
-    id: 1,
-    name: 'Producto A',
-    description: 'Descripción del Producto A',
-    price: 29.99,
-    category: 'Electrónica',
-    inStock: false,
-    imageURL: 'https://www.mipcparquecentral.com/cdn/shop/files/pcgamercolombia_70e323cd-7909-43bb-bfc5-449cdec19a21.png?v=1709663633'
-  }
+  useEffect(() => {
+    const fetchData = () => {
+      try {
+        const products: IProductDto[] = ProductService.getProducts()
+        setApiProducts(products)
+      } catch (err) {
+        alert(err)
+      }
+    }
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const res = ''
-
-  //       setApiProducts(res)
-  //     } catch (err) {
-  //       // console.error(err)
-  //     }
-  //   }
-
-  //   fetchData()
-  // }, [])
+    fetchData()
+  }, [])
 
   return (
     <GeneralContainer>
-      <ProductCardComponent product={exProduct} ></ProductCardComponent>
+      {
+        apiProducts.map(product => (
+          <ProductCardComponent key={product.id} product={product} ></ProductCardComponent>
+        ))
+      }
     </GeneralContainer>
   )
 }

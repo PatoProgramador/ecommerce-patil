@@ -2,10 +2,10 @@ import { AppApiGateway } from '@app/api-gateways/app.api-gateway'
 import { IProductDto } from '@mod/product-detail/services/product.dto'
 
 export class ProductService {
-  getProducts (): IProductDto[] {
+  static getProducts (): IProductDto[] {
     let res
 
-    const response = AppApiGateway.getProducts()
+    const response: IProductDto[] = AppApiGateway.getProducts()
 
     if (response.length > 0) {
       res = response
