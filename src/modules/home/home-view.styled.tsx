@@ -8,6 +8,8 @@ interface FilterContainerProps {
 export const FilterContainer = styled.div<FilterContainerProps>`
     font-family: 'Mulish', sans-serif;
     font-style: normal;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     -webkit-box-align: center;
     padding: 32px 16px;
     gap: 10px;
@@ -17,11 +19,13 @@ export const FilterContainer = styled.div<FilterContainerProps>`
 
     @media (max-width: 768px) {
       width: 95%;
+      grid-template-columns: 1fr 1fr;
       padding: 24px 20px;
     }
 
     @media (max-width: 480px) {
       width: 90%;
+      grid-template-columns: 1fr 1fr;
       padding: 16px 10px;
     }
 `

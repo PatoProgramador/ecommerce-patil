@@ -20,14 +20,14 @@ export const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
       <S.ContainerLayout>
         <S.HeaderLayout>
           <S.TextHeaderLayou>Productos</S.TextHeaderLayou>
-          <S.ImageLayout src={patoLogo}></S.ImageLayout>
+          <S.HeaderImageLayout src={patoLogo}></S.HeaderImageLayout>
           <S.SecondImageLayout src={cartLogo}></S.SecondImageLayout>
         </S.HeaderLayout>
         {children}
         <S.FooterContainerNav>
           <S.FooterRow className='rights' m='10px 0 0' dis="flex" fw="" ai="start">
             <S.FooterCol w="50%" m="0">
-              <S.ImageLayout w="110px" h="auto" src={patoLogo}></S.ImageLayout>
+              <S.FooterImageLayout w="110px" h="auto" src={patoLogo}></S.FooterImageLayout>
               <S.FooterRow className='socials' jc="start" m="0">
                 <S.FooterCol m="26px 16px 24px 0">
                   <a
@@ -35,7 +35,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
                     href='https://www.linkedin.com/in/kevinpatdev/'
                     rel='noreferrer'
                   >
-                    <img
+                  <img
                       width='20px'
                       height='20px'
                       src={inLogo}

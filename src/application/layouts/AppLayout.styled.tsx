@@ -32,9 +32,13 @@ interface ImageLayoutProps {
   w?: string;
   h?: string;
 }
-export const ImageLayout = styled.img<ImageLayoutProps>`
+export const HeaderImageLayout = styled.img<ImageLayoutProps>`
   width: ${(props) => props.w || '120px'};
   height: ${(props) => props.h || '85px'};
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `
 
 export const SecondImageLayout = styled.img<ImageLayoutProps>`
@@ -171,6 +175,11 @@ export const FooterCol = styled.div<FooterColProps>`
     width: ${(props) => props.w550 || ' '};
     min-height: ${(props) => props.minh550 || ' '};
   }
+`
+
+export const FooterImageLayout = styled.img<ImageLayoutProps>`
+  width: ${(props) => props.w || '120px'};
+  height: ${(props) => props.h || '85px'};
 `
 
 interface FooterLinkProps {

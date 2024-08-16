@@ -17,20 +17,20 @@ export const GeneralContainer = styled.div<GeneralContainerProps>`
     height: ${(props) => props.h || 'auto'};
     margin: 0 auto;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1300px) {
+      grid-template-columns: 1fr 1fr;
+      padding: 24px 20px;
+    }
+
+    @media (max-width: 650px) {
       width: 95%;
+      grid-template-columns: 1fr;
       padding: 24px 20px;
     }
 
     @media (max-width: 480px) {
       width: 90%;
+      grid-template-columns: 1fr;
       padding: 16px 10px;
     }
-
-    //@media (min-width: 769px) {
-      //width: 100%;
-      //max-width: 1100px; /* Mantiene un ancho máximo */
-      //margin: 24px auto;
-     // padding: 32px 5%; 
-    //}
 `

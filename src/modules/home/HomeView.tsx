@@ -108,7 +108,7 @@ export const HomeView: React.FC<{}> = () => {
             setSortOrder(e.target.value)
           }}
         >
-          <option value="">-</option>
+          <option value="">Por defecto</option>
           <option value="az">A - Z</option>
           <option value="dz">Z - A</option>
         </select>
