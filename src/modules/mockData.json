@@ -1,182 +1,182 @@
 [
   {
     "id": 1,
-    "name": "Producto A",
-    "description": "Descripción del Producto A",
-    "price": 29.99,
-    "category": "Electrónica",
+    "name": "Laptop Dell XPS 13",
+    "description": "Ultrabook de alto rendimiento con pantalla de 13.3 pulgadas.",
+    "price": 999.99,
+    "category": "Laptops",
     "inStock": true,
-    "imageURL": "https://www.mipcparquecentral.com/cdn/shop/files/pcgamercolombia_70e323cd-7909-43bb-bfc5-449cdec19a21.png?v=1709663633"
+    "imageURL": "https://m.media-amazon.com/images/I/71lpjnJzMoL._AC_SY355_.jpg"
   },
   {
     "id": 2,
-    "name": "Producto B",
-    "description": "Descripción del Producto B",
-    "price": 49.99,
-    "category": "Electrónica",
+    "name": "Monitor Samsung 24''",
+    "description": "Monitor LED Full HD de 24 pulgadas.",
+    "price": 129.99,
+    "category": "Monitores",
     "inStock": false,
-    "imageURL": "https://example.com/images/producto_b.jpg"
+    "imageURL": "https://example.com/images/monitor_samsung_24.jpg"
   },
   {
     "id": 3,
-    "name": "Producto C",
-    "description": "Descripción del Producto C",
-    "price": 19.99,
-    "category": "Hogar",
+    "name": "Teclado Mecánico Corsair K95",
+    "description": "Teclado mecánico con retroiluminación RGB y teclas programables.",
+    "price": 199.99,
+    "category": "Periféricos",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_c.jpg"
+    "imageURL": "https://example.com/images/teclado_corsair_k95.jpg"
   },
   {
     "id": 4,
-    "name": "Producto D",
-    "description": "Descripción del Producto D",
-    "price": 39.99,
-    "category": "Hogar",
+    "name": "Mouse Gaming Logitech G502",
+    "description": "Mouse para gaming con 11 botones programables y sensor de alta precisión.",
+    "price": 79.99,
+    "category": "Periféricos",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_d.jpg"
+    "imageURL": "https://example.com/images/mouse_logitech_g502.jpg"
   },
   {
     "id": 5,
-    "name": "Producto E",
-    "description": "Descripción del Producto E",
-    "price": 15.99,
-    "category": "Juguetes",
+    "name": "Memoria RAM Kingston HyperX 16GB",
+    "description": "Kit de memoria RAM DDR4 de 16GB con frecuencia de 3200MHz.",
+    "price": 89.99,
+    "category": "Componentes",
     "inStock": false,
-    "imageURL": "https://example.com/images/producto_e.jpg"
+    "imageURL": "https://example.com/images/ram_kingston_hyperx.jpg"
   },
   {
     "id": 6,
-    "name": "Producto F",
-    "description": "Descripción del Producto F",
-    "price": 25.99,
-    "category": "Juguetes",
+    "name": "Disco Duro SSD Samsung 1TB",
+    "description": "Disco duro SSD de 1TB con velocidad de lectura de hasta 3500MB/s.",
+    "price": 149.99,
+    "category": "Almacenamiento",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_f.jpg"
+    "imageURL": "https://example.com/images/ssd_samsung_1tb.jpg"
   },
   {
     "id": 7,
-    "name": "Producto G",
-    "description": "Descripción del Producto G",
-    "price": 99.99,
-    "category": "Electrónica",
+    "name": "Tarjeta Gráfica NVIDIA RTX 3080",
+    "description": "Tarjeta gráfica de alto rendimiento con 10GB de VRAM GDDR6X.",
+    "price": 699.99,
+    "category": "Componentes",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_g.jpg"
+    "imageURL": "https://example.com/images/gpu_nvidia_rtx_3080.jpg"
   },
   {
     "id": 8,
-    "name": "Producto H",
-    "description": "Descripción del Producto H",
-    "price": 8.99,
-    "category": "Hogar",
+    "name": "Fuente de Poder EVGA 750W",
+    "description": "Fuente de poder de 750W con certificación 80 Plus Gold.",
+    "price": 109.99,
+    "category": "Componentes",
     "inStock": false,
-    "imageURL": "https://example.com/images/producto_h.jpg"
+    "imageURL": "https://example.com/images/fuente_evga_750w.jpg"
   },
   {
     "id": 9,
-    "name": "Producto I",
-    "description": "Descripción del Producto I",
-    "price": 29.99,
-    "category": "Hogar",
+    "name": "Case NZXT H510",
+    "description": "Gabinete mid-tower con ventana lateral y excelente manejo de cables.",
+    "price": 69.99,
+    "category": "Componentes",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_i.jpg"
+    "imageURL": "https://example.com/images/case_nzxt_h510.jpg"
   },
   {
     "id": 10,
-    "name": "Producto J",
-    "description": "Descripción del Producto J",
-    "price": 5.99,
-    "category": "Juguetes",
+    "name": "Placa Madre ASUS ROG Strix B550-F",
+    "description": "Placa madre ATX con soporte para procesadores AMD Ryzen y PCIe 4.0.",
+    "price": 179.99,
+    "category": "Componentes",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_j.jpg"
+    "imageURL": "https://example.com/images/placa_madre_asus_b550.jpg"
   },
   {
     "id": 11,
-    "name": "Producto K",
-    "description": "Descripción del Producto K",
-    "price": 89.99,
-    "category": "Electrónica",
+    "name": "Procesador AMD Ryzen 9 5900X",
+    "description": "Procesador de 12 núcleos y 24 hilos con frecuencia base de 3.7GHz.",
+    "price": 549.99,
+    "category": "Componentes",
     "inStock": false,
-    "imageURL": "https://example.com/images/producto_k.jpg"
+    "imageURL": "https://example.com/images/procesador_amd_ryzen_5900x.jpg"
   },
   {
     "id": 12,
-    "name": "Producto L",
-    "description": "Descripción del Producto L",
-    "price": 44.99,
-    "category": "Hogar",
+    "name": "Enfriamiento Líquido Corsair H100i",
+    "description": "Kit de enfriamiento líquido con radiador de 240mm y ventiladores RGB.",
+    "price": 139.99,
+    "category": "Componentes",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_l.jpg"
+    "imageURL": "https://example.com/images/enfriamiento_corsair_h100i.jpg"
   },
   {
     "id": 13,
-    "name": "Producto M",
-    "description": "Descripción del Producto M",
-    "price": 18.99,
-    "category": "Juguetes",
+    "name": "Headset Gaming HyperX Cloud II",
+    "description": "Auriculares gaming con sonido envolvente 7.1 y micrófono desmontable.",
+    "price": 99.99,
+    "category": "Periféricos",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_m.jpg"
+    "imageURL": "https://example.com/images/headset_hyperx_cloud_ii.jpg"
   },
   {
     "id": 14,
-    "name": "Producto N",
-    "description": "Descripción del Producto N",
-    "price": 75.99,
-    "category": "Electrónica",
+    "name": "Monitor Gaming ASUS 27''",
+    "description": "Monitor gaming de 27 pulgadas con frecuencia de actualización de 144Hz.",
+    "price": 329.99,
+    "category": "Monitores",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_n.jpg"
+    "imageURL": "https://example.com/images/monitor_asus_27.jpg"
   },
   {
     "id": 15,
-    "name": "Producto O",
-    "description": "Descripción del Producto O",
-    "price": 30.99,
-    "category": "Hogar",
+    "name": "Cámara Web Logitech C920",
+    "description": "Cámara web Full HD con micrófono integrado y enfoque automático.",
+    "price": 79.99,
+    "category": "Periféricos",
     "inStock": false,
-    "imageURL": "https://example.com/images/producto_o.jpg"
+    "imageURL": "https://example.com/images/camara_logitech_c920.jpg"
   },
   {
     "id": 16,
-    "name": "Producto P",
-    "description": "Descripción del Producto P",
-    "price": 12.99,
-    "category": "Juguetes",
+    "name": "Router ASUS RT-AC68U",
+    "description": "Router Wi-Fi dual-band con soporte para hasta 1900Mbps.",
+    "price": 129.99,
+    "category": "Redes",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_p.jpg"
+    "imageURL": "https://example.com/images/router_asus_rt_ac68u.jpg"
   },
   {
     "id": 17,
-    "name": "Producto Q",
-    "description": "Descripción del Producto Q",
-    "price": 60.99,
-    "category": "Electrónica",
+    "name": "Impresora Multifuncional HP",
+    "description": "Impresora multifuncional con capacidades de impresión, escaneo y copiado.",
+    "price": 119.99,
+    "category": "Impresoras",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_q.jpg"
+    "imageURL": "https://example.com/images/impresora_hp_multifuncional.jpg"
   },
   {
     "id": 18,
-    "name": "Producto R",
-    "description": "Descripción del Producto R",
-    "price": 22.99,
-    "category": "Hogar",
+    "name": "SSD Externo Samsung T5 1TB",
+    "description": "Disco duro externo portátil con velocidad de transferencia de hasta 540MB/s.",
+    "price": 169.99,
+    "category": "Almacenamiento",
     "inStock": false,
-    "imageURL": "https://example.com/images/producto_r.jpg"
+    "imageURL": "https://example.com/images/ssd_samsung_t5.jpg"
   },
   {
     "id": 19,
-    "name": "Producto S",
-    "description": "Descripción del Producto S",
-    "price": 50.99,
-    "category": "Juguetes",
+    "name": "Cable HDMI 2.0 10ft",
+    "description": "Cable HDMI de alta velocidad con soporte para 4K a 60Hz.",
+    "price": 14.99,
+    "category": "Accesorios",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_s.jpg"
+    "imageURL": "https://example.com/images/cable_hdmi_10ft.jpg"
   },
   {
     "id": 20,
-    "name": "Producto T",
-    "description": "Descripción del Producto T",
-    "price": 9.99,
-    "category": "Hogar",
+    "name": "Micrófono USB Blue Yeti",
+    "description": "Micrófono USB con calidad de estudio y patrón polar múltiple.",
+    "price": 129.99,
+    "category": "Accesorios",
     "inStock": true,
-    "imageURL": "https://example.com/images/producto_t.jpg"
+    "imageURL": "https://example.com/images/microfono_blue_yeti.jpg"
   }
 ]
