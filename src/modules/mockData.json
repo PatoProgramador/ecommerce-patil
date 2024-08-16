@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Producto A",
+    "description": "Descripción del Producto A",
+    "price": 29.99,
+    "category": "Electrónica",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_a.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Producto B",
+    "description": "Descripción del Producto B",
+    "price": 49.99,
+    "category": "Electrónica",
+    "inStock": false,
+    "imageURL": "https://example.com/images/producto_b.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Producto C",
+    "description": "Descripción del Producto C",
+    "price": 19.99,
+    "category": "Hogar",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_c.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Producto D",
+    "description": "Descripción del Producto D",
+    "price": 39.99,
+    "category": "Hogar",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_d.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Producto E",
+    "description": "Descripción del Producto E",
+    "price": 15.99,
+    "category": "Juguetes",
+    "inStock": false,
+    "imageURL": "https://example.com/images/producto_e.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Producto F",
+    "description": "Descripción del Producto F",
+    "price": 25.99,
+    "category": "Juguetes",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_f.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Producto G",
+    "description": "Descripción del Producto G",
+    "price": 99.99,
+    "category": "Electrónica",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_g.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Producto H",
+    "description": "Descripción del Producto H",
+    "price": 8.99,
+    "category": "Hogar",
+    "inStock": false,
+    "imageURL": "https://example.com/images/producto_h.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Producto I",
+    "description": "Descripción del Producto I",
+    "price": 29.99,
+    "category": "Hogar",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_i.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Producto J",
+    "description": "Descripción del Producto J",
+    "price": 5.99,
+    "category": "Juguetes",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_j.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Producto K",
+    "description": "Descripción del Producto K",
+    "price": 89.99,
+    "category": "Electrónica",
+    "inStock": false,
+    "imageURL": "https://example.com/images/producto_k.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Producto L",
+    "description": "Descripción del Producto L",
+    "price": 44.99,
+    "category": "Hogar",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_l.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Producto M",
+    "description": "Descripción del Producto M",
+    "price": 18.99,
+    "category": "Juguetes",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_m.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Producto N",
+    "description": "Descripción del Producto N",
+    "price": 75.99,
+    "category": "Electrónica",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_n.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Producto O",
+    "description": "Descripción del Producto O",
+    "price": 30.99,
+    "category": "Hogar",
+    "inStock": false,
+    "imageURL": "https://example.com/images/producto_o.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Producto P",
+    "description": "Descripción del Producto P",
+    "price": 12.99,
+    "category": "Juguetes",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_p.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Producto Q",
+    "description": "Descripción del Producto Q",
+    "price": 60.99,
+    "category": "Electrónica",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_q.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Producto R",
+    "description": "Descripción del Producto R",
+    "price": 22.99,
+    "category": "Hogar",
+    "inStock": false,
+    "imageURL": "https://example.com/images/producto_r.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Producto S",
+    "description": "Descripción del Producto S",
+    "price": 50.99,
+    "category": "Juguetes",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_s.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Producto T",
+    "description": "Descripción del Producto T",
+    "price": 9.99,
+    "category": "Hogar",
+    "inStock": true,
+    "imageURL": "https://example.com/images/producto_t.jpg"
+  }
+]

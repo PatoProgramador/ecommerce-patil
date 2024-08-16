@@ -1,0 +1,12 @@
+:root {
+  --bg-color: #f2f2f2;
+}
+
+body {
+  font-family: 'Mulish';
+  font-style: normal;
+  background-color: var(--bg-color);
+  margin: 0px;
+  padding: 0px;
+}
+

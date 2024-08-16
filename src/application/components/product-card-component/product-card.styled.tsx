@@ -1,0 +1,79 @@
+import styled from 'styled-components'
+
+interface ProductCardProps {
+  w?: string;
+  h?: string;
+}
+
+export const CardContainer = styled.div<ProductCardProps>`
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 13px;
+  width: 300px;
+  height: 500px;
+  border-radius: 25px;
+  background: rgb(212, 223, 238);
+  box-shadow: rgba(0, 0, 0, 0.404) -8px 8px 26px;
+  margin: 24px;
+`
+
+export const CardImage = styled.img`
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+`
+
+export const CardTitle = styled.p`
+  font-family: 'Elliot Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+  color: #002855;
+  margin: 2px 0px;
+  @media (max-width: 800px) { }
+`
+
+export const CardDescription = styled.p`
+  font-family: 'Elliot Pro';
+  font-weight: 400;
+  font-size:15px;
+  text-align: center;
+  line-height: 19.2px;
+  padding: 0px 15px;
+  margin: 5px;
+  @media (max-width: 800px) { }
+`
+interface ButtomCardProps {
+  isStock: boolean;
+}
+
+export const CardButtom = styled.button<ButtomCardProps>`
+  width: 100%;
+  height: 100%;
+  font-family: 'Elliot Pro';
+  font-weight: 400;
+  font-size:15px;
+  background-color: ${(props) => props.isStock ? '#b581f1' : '#e73763'};
+  border: none;
+  border-radius: 0px 0px 20px 20px;
+
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    cursor: pointer;
+    background-color: ${(props) => props.isStock ? '#37d2e7' : '#f34e4e'};
+    color: #FFFFFF;
+  }
+
+  &:active {
+    cursor: pointer;
+    background-color: ${(props) => props.isStock ? '#f71fda' : '#e7a137'};
+    color: #FFFFFF;
+  }
+`
