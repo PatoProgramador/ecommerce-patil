@@ -19,6 +19,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
     <Fragment>
       <S.ContainerLayout>
         <S.HeaderLayout>
+          <S.TextHeaderLayou>Productos</S.TextHeaderLayou>
           <S.ImageLayout src={patoLogo}></S.ImageLayout>
           <S.SecondImageLayout src={cartLogo}></S.SecondImageLayout>
         </S.HeaderLayout>

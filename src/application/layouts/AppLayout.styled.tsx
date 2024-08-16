@@ -12,10 +12,22 @@ export const HeaderLayout = styled.div`
   justify-content: space-between;
   padding: 16px 30px 16px 40px;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(16px);
+  background: rgb(132, 28, 125);
+  box-shadow: rgba(0, 0, 0, 0.404) -8px 8px 26px;
   border-radius: 0px 0px 20px 20px;
 `
+
+export const TextHeaderLayou = styled.p`
+  font-family: 'Elliot Pro';
+  font-weight: 400;
+  font-size:40px;
+  text-align: center;
+  line-height: 19.2px;
+  color: aliceblue;
+  padding: 0px 15px;
+  margin: 5px;
+`
+
 interface ImageLayoutProps {
   w?: string;
   h?: string;
@@ -40,7 +52,7 @@ export const TextLayout = styled.div<TextLayoutProps>`
   font-family: 'Mulish', sans-serif;
   font-style: normal;
   font-weight: ${(props) => props.fw || '400'};
-  font-size: ${(props) => props.fz || '10px'};
+  font-size: ${(props) => props.fz || '14px'};
   line-height: 120%;
   color: #FFFFFF;
   margin-bottom: ${(props) => props.mb || '8px'};
@@ -64,9 +76,11 @@ export const FooterContainerNav = styled.div<FooterContainerNavProps>`
   gap: 24px;
   width: 100%;
   height: auto;
-  background: #505B69;
+  background: rgb(0, 0, 0);
+  border-top: 1rem;
+  border-top: solid;
+  border-color: rgb(132, 28, 125);
   color: white;
-  
 `
 interface FooterRowProps {
   dis?: string;

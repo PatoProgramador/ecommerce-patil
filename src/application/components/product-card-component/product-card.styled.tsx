@@ -16,9 +16,9 @@ export const CardContainer = styled.div<ProductCardProps>`
   width: 300px;
   height: 500px;
   border-radius: 25px;
-  background: rgb(212, 223, 238);
+  background: rgba(212, 218, 238, 0.397);
   box-shadow: rgba(0, 0, 0, 0.404) -8px 8px 26px;
-  margin: 24px;
+  margin: 24px auto;
 `
 
 export const CardImage = styled.img`
@@ -34,7 +34,7 @@ export const CardTitle = styled.p`
   font-size: 30px;
   line-height: 24px;
   text-align: center;
-  color: #002855;
+  color: #ffffff;
   margin: 2px 0px;
   @media (max-width: 800px) { }
 `
@@ -45,6 +45,7 @@ export const CardDescription = styled.p`
   font-size:15px;
   text-align: center;
   line-height: 19.2px;
+  color: aliceblue;
   padding: 0px 15px;
   margin: 5px;
   @media (max-width: 800px) { }
@@ -67,7 +68,7 @@ export const CardButtom = styled.button<ButtomCardProps>`
 
   &:hover {
     cursor: pointer;
-    background-color: ${(props) => props.isStock ? '#37d2e7' : '#f34e4e'};
+    background-color: ${(props) => props.isStock ? 'rgb(208, 44, 197)' : '#f34e4e'};
     color: #FFFFFF;
   }
 
