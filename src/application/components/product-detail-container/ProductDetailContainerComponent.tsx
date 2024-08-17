@@ -4,9 +4,10 @@ import { IProductDto } from '@mod/product-detail/services/product.dto'
 
 interface ProductDetailContainerProps {
   product: IProductDto;
+  onClick: React.MouseEventHandler<HTMLButtonElement> | undefined
 }
 
-const ProductDetailContainerComponent: React.FC<ProductDetailContainerProps> = ({ product }) => {
+const ProductDetailContainerComponent: React.FC<ProductDetailContainerProps> = ({ product, onClick }) => {
   return (
     <S.ProductDetailDiv>
       <S.ProductImage imageUrl={product.imageURL}/>
@@ -24,7 +25,7 @@ const ProductDetailContainerComponent: React.FC<ProductDetailContainerProps> = (
           {product.description}
         </S.ProductSubTitle>
         <S.ButtomContainer>
-          <S.ProductButtom isStock={product.inStock}>
+          <S.ProductButtom onClick={product.inStock ? onClick : undefined} isStock={product.inStock}>
             { product.inStock ? 'Añadir al carrito' : 'Fuera de stock :('}
           </S.ProductButtom>
         </S.ButtomContainer>

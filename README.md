@@ -19,6 +19,7 @@ rutas de la APP:
 * Styled components
 * React Use Context
 * TypeScript
+* Craco
 
 ### Cómo correr el proyecto
 
