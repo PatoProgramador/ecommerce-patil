@@ -10,6 +10,7 @@ export const CartContainer = styled.div`
   gap: 13px;
   width: 800px;
   height: auto;
+  min-height: 450px;
   border-radius: 25px;
   padding: 20px;
   background: rgba(212, 218, 238, 0.397);
@@ -23,9 +24,23 @@ export const CartContainer = styled.div`
 export const CartTitle = styled.p`
   font-family: 'Elliot Pro';
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 35px;
   height: 35px;
+  line-height: 24px;
+  text-align: center;
+  padding: 0px 20px;
+  color: #ffffff;
+  margin: 2px 0px;
+  @media (max-width: 800px) { }
+`
+
+export const CartSubtitle = styled.p`
+  font-family: 'Elliot Pro';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  height: 400px;
   line-height: 24px;
   text-align: center;
   padding: 0px 20px;

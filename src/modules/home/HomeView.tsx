@@ -84,8 +84,15 @@ export const HomeView: React.FC<{}> = () => {
 
   const handleAddToCartClick = (product: IProductDto) => {
     if (product.inStock) {
-      updateCartData({ products: [...cartData.products, product] })
-      alert('Se añadio el producto a tu carrito :)')
+      const isProductInCart = cartData.products.some(cartProduct => cartProduct.id === product.id)
+      if (isProductInCart) {
+        alert('El producto ya está en tu carrito.')
+      } else {
+        updateCartData({ products: [...cartData.products, product] })
+        alert('Se añadió el producto a tu carrito :)')
+      }
+    } else {
+      alert('Producto agotado :(')
     }
   }
 

@@ -18,9 +18,11 @@ export const CartView: React.FC<{}> = () => {
           Tu carrito
         </S.CartTitle>
         {
-          cartData.products.map((product) => (
-            <ProductCartComponent key={product.id} product={product} onClick={() => handleRemoveClick(product.id)}></ProductCartComponent>
-          ))
+          cartData.products.length > 0
+            ? cartData.products.map((product) => (
+              <ProductCartComponent key={product.id} product={product} onClick={() => handleRemoveClick(product.id)}></ProductCartComponent>
+            ))
+            : <S.CartSubtitle>Aun no hay productos en tu carrito</S.CartSubtitle>
         }
       </S.CartContainer>
     </>
