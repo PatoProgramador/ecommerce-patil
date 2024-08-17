@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { IProductDto } from './services/product.dto'
 import { ProductService } from '@mod/home/services/get-products.service'
+import ProductDetailContainerComponent from '@app/components/product-detail-container/ProductDetailContainerComponent'
 
 export const ProductDetailView: React.FC<{}> = () => {
   const { id } = useParams<{ id: string }>()
@@ -28,13 +29,7 @@ export const ProductDetailView: React.FC<{}> = () => {
   }
 
   return (
-    <div>
-      <h1>{product.name}</h1>
-      <p>{product.description}</p>
-      <p>Precio: {product.price}</p>
-      <p>Categoría: {product.category}</p>
-      <img src={product.imageURL} alt={product.name} />
-    </div>
+    <ProductDetailContainerComponent product={product}/>
   )
 }
 
