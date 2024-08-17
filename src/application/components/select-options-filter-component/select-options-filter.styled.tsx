@@ -26,4 +26,8 @@ export const SelectOptionsContainer = styled.select`
   padding: 5px 10px;
   background-color: rgba(0, 0, 0, 0.74);
   color: white;
+
+  @media (max-width: 450px) {
+    width: 170px;
+  }
 `
