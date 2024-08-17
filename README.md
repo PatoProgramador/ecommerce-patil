@@ -9,7 +9,7 @@ Esta APP esta centrada en la interacción del usuario con los productos, por ell
 * Apartado de carrito donde puedes ver tus productos y eliminarlos
 * App responsive!
 
-rutas de la APP:
+### Rutas de la APP:
 * / -> La pagina principal
 * /product/:id -> detalles del producto
 * /cart -> tu carrito
