@@ -25,9 +25,9 @@ Esta APP esta centrada en la interacción del usuario con los productos, por ell
 
 Para correr este proyecto basta con descargarlo y situarte en la carpeta en tu terminal para ejecutar los siguientes comandos:
 
-Para instalar las dependencias necesarias:
+Para instalar las dependencias necesarias (dado que en este proyecto uso algunas librerias que en su version actual chocan es necesario utilizar el --legacy-peer-deps o lanzará conflictos):
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
 Para ejecutar la app (por defecto se alojara en http://localhost:3000/)
