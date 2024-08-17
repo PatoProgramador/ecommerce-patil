@@ -3,19 +3,21 @@ import React, { createContext, useContext, useState } from 'react'
 
 // Define the shape of your registration data
 interface CartData {
-  products?: IProductDto[];
+  products: IProductDto[];
 }
 
 // Define the shape of your context value
 interface CartContextValue {
   cartData: CartData;
   updateCartData: (data: CartData) => void;
+  removeProductFromCart: (productId: number) => void;
 }
 
 // Create the context
 export const CartContext = createContext<CartContextValue>({
   cartData: { products: [] },
-  updateCartData: () => {}
+  updateCartData: () => {},
+  removeProductFromCart: () => {}
 })
 
 // Define a custom hook to access the context value
@@ -31,8 +33,13 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setCartData(data)
   }
 
+  const removeProductFromCart = (productId: number) => {
+    const updatedProducts = cartData.products.filter(product => product.id !== productId)
+    setCartData({ products: updatedProducts })
+  }
+
   return (
-    <CartContext.Provider value={{ cartData, updateCartData }}>
+    <CartContext.Provider value={{ cartData, updateCartData, removeProductFromCart }}>
       {children}
     </CartContext.Provider>
   )

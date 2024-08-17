@@ -1,10 +1,15 @@
 import React from 'react'
 import * as S from './cart-view.styled'
-import { ProductService } from '@mod/home/services/get-products.service'
 import ProductCartComponent from '@app/components/product-cart-component/ProductCartComponent'
+import { useCartContext } from '@mod/home/services/CartContext'
 
 export const CartView: React.FC<{}> = () => {
-  const products = ProductService.getProducts()
+  const { cartData, removeProductFromCart } = useCartContext()
+
+  const handleRemoveClick = (productId: number) => {
+    removeProductFromCart(productId)
+    alert('Eliminado del carrito ;)')
+  }
 
   return (
     <>
@@ -13,8 +18,8 @@ export const CartView: React.FC<{}> = () => {
           Tu carrito
         </S.CartTitle>
         {
-          products.map((product) => (
-            <ProductCartComponent key={product.id} product={product}></ProductCartComponent>
+          cartData.products.map((product) => (
+            <ProductCartComponent key={product.id} product={product} onClick={() => handleRemoveClick(product.id)}></ProductCartComponent>
           ))
         }
       </S.CartContainer>

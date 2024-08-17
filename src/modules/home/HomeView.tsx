@@ -4,6 +4,7 @@ import ProductCardComponent from '@app/components/product-card-component/Product
 import { IProductDto } from '@mod/product-detail/services/product.dto'
 import { ProductService } from './services/get-products.service'
 import { FilterSection } from './sections/FilterSection'
+import { useCartContext } from './services/CartContext'
 
 export const HomeView: React.FC<{}> = () => {
   const [apiProducts, setApiProducts] = useState<IProductDto[]>([])
@@ -12,6 +13,8 @@ export const HomeView: React.FC<{}> = () => {
   const [categoryFilter, setCategoryFilter] = useState<string>('')
   const [availabilityFilter, setAvailabilityFilter] = useState<string>('')
   const [sortOrder, setSortOrder] = useState<string>('')
+
+  const { cartData, updateCartData } = useCartContext()
 
   useEffect(() => {
     const fetchData = () => {
@@ -79,13 +82,20 @@ export const HomeView: React.FC<{}> = () => {
     }
   }
 
+  const handleAddToCartClick = (product: IProductDto) => {
+    if (product.inStock) {
+      updateCartData({ products: [...cartData.products, product] })
+      alert('Se añadio el producto a tu carrito :)')
+    }
+  }
+
   return (
     <>
       <FilterSection handleChange={handleFilterChange}/>
       <GeneralContainer>
         {
           filteredProducts.map(product => (
-            <ProductCardComponent key={product.id} product={product} ></ProductCardComponent>
+            <ProductCardComponent key={product.id} product={product} onClick={() => handleAddToCartClick(product)}></ProductCardComponent>
           ))
         }
       </GeneralContainer>

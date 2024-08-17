@@ -5,9 +5,10 @@ import { useNavigate } from 'react-router-dom'
 
 interface ProductCardProps {
   product: IProductDto;
+  onClick: React.MouseEventHandler<HTMLButtonElement> | undefined
 }
 
-const ProductCardComponent: React.FC<ProductCardProps> = ({ product }) => {
+const ProductCardComponent: React.FC<ProductCardProps> = ({ product, onClick }) => {
   const navigate = useNavigate()
 
   const handleOnClick = () => {
@@ -25,7 +26,7 @@ const ProductCardComponent: React.FC<ProductCardProps> = ({ product }) => {
         <S.CardTitle>
           {'$' + product.price}
         </S.CardTitle>
-        <S.CardButtom isStock={product.inStock}>
+        <S.CardButtom onClick={product.inStock ? onClick : undefined} isStock={product.inStock}>
           { product.inStock ? 'Añadir al carrito' : 'Fuera de stock :('}
         </S.CardButtom>
       </S.CardContainer>

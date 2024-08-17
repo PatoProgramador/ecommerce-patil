@@ -4,9 +4,10 @@ import React from 'react'
 
 interface ProductCartProps {
   product: IProductDto;
+  onClick: React.MouseEventHandler<HTMLButtonElement> | undefined
 }
 
-const ProductCartComponent: React.FC<ProductCartProps> = ({ product }) => {
+const ProductCartComponent: React.FC<ProductCartProps> = ({ product, onClick }) => {
   return (
       <S.ProductCartContainer>
         <S.ProductCartImage imageUrl={product.imageURL}/>
@@ -21,7 +22,7 @@ const ProductCartComponent: React.FC<ProductCartProps> = ({ product }) => {
             <S.ProductPrice>
               {'+' + '$' + product.price}
             </S.ProductPrice>
-            <S.CartDeleteButtom>
+            <S.CartDeleteButtom onClick={onClick}>
               Quitar del carrito
             </S.CartDeleteButtom>
           </S.ProductCartFinalSectionDiv>
