@@ -3,7 +3,7 @@ import { GeneralContainer } from '@app/components/general-container-component/ge
 import ProductCardComponent from '@app/components/product-card-component/ProductCardComponent'
 import { IProductDto } from '@mod/product-detail/services/product.dto'
 import { ProductService } from './services/get-products.service'
-import * as S from './home-view.styled'
+import { FilterSection } from './sections/FilterSection'
 
 export const HomeView: React.FC<{}> = () => {
   const [apiProducts, setApiProducts] = useState<IProductDto[]>([])
@@ -59,60 +59,29 @@ export const HomeView: React.FC<{}> = () => {
     setFilteredProducts(filtered)
   }, [apiProducts, priceFilter, categoryFilter, availabilityFilter, sortOrder])
 
+  const handleFilterChange = (event: React.ChangeEvent<HTMLSelectElement>, filterType: string) => {
+    const value = event.target.value
+    switch (filterType) {
+      case 'category':
+        setCategoryFilter(value)
+        break
+      case 'availability':
+        setAvailabilityFilter(value)
+        break
+      case 'price':
+        setPriceFilter(value)
+        break
+      case 'sortOrder':
+        setSortOrder(value)
+        break
+      default:
+        break
+    }
+  }
+
   return (
     <>
-      <S.FilterContainer>
-        <select
-          name="precio"
-          id="price-filter"
-          onChange={(e) => {
-            setPriceFilter(e.target.value)
-          }}
-        >
-          <option value="">Por defecto</option>
-          <option value="asc">Menor a mayor</option>
-          <option value="desc">Mayor a menor</option>
-        </select>
-        <select
-          name="categoria"
-          id="category-filter"
-          onChange={(e) => {
-            setCategoryFilter(e.target.value)
-          }}
-        >
-          <option value="">Todas las categorías</option>
-          <option value="Laptops">Laptops</option>
-          <option value="Monitores">Monitores</option>
-          <option value="Periféricos">Periféricos</option>
-          <option value="Componentes">Componentes</option>
-          <option value="Almacenamiento">Almacenamiento</option>
-          <option value="Redes">Redes</option>
-          <option value="Impresoras">Impresoras</option>
-          <option value="Accesorios">Accesorios</option>
-        </select>
-        <select
-          name="disponibilidad"
-          id="availability-filter"
-          onChange={(e) => {
-            setAvailabilityFilter(e.target.value)
-          }}
-        >
-          <option value="">Todos</option>
-          <option value="inStock">En stock</option>
-          <option value="outOfStock">Agotado</option>
-        </select>
-        <select
-          name="ordenar"
-          id="sort-filter"
-          onChange={(e) => {
-            setSortOrder(e.target.value)
-          }}
-        >
-          <option value="">Por defecto</option>
-          <option value="az">A - Z</option>
-          <option value="dz">Z - A</option>
-        </select>
-      </S.FilterContainer>
+      <FilterSection handleChange={handleFilterChange}/>
       <GeneralContainer>
         {
           filteredProducts.map(product => (
