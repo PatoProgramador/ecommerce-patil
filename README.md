@@ -14,9 +14,9 @@ Para ejecutar la app (por defecto se alojara en http://localhost:3000/)
 ```bash
 npm start
 ```
-### Descripción
-
 Y listo, ya puedes probarla ;)
+
+### Descripción
 
 Esta APP esta centrada en la interacción del usuario con los productos, por ello, incluye las siguientes funcionalidades:
 
