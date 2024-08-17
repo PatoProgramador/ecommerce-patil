@@ -17,18 +17,17 @@ export const GeneralContainer = styled.div<GeneralContainerProps>`
     height: ${(props) => props.h || 'auto'};
     margin: 0 auto;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 1460px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 24px 20px;
+    }
+
+    @media (max-width: 1200px) {
+      width: 95%;
       grid-template-columns: 1fr 1fr;
       padding: 24px 20px;
     }
-
-    @media (max-width: 650px) {
-      width: 95%;
-      grid-template-columns: 1fr;
-      padding: 24px 20px;
-    }
-
-    @media (max-width: 480px) {
+    @media (max-width: 750px) {
       width: 90%;
       grid-template-columns: 1fr;
       padding: 16px 10px;
