@@ -21,19 +21,27 @@ export const CardContainer = styled.div<ProductCardProps>`
   margin: 24px auto;
 `
 
-export const CardImage = styled.img`
+interface CardImageProps {
+  imageUrl: string;
+}
+
+export const CardImage = styled.div<CardImageProps>`
   width: 300px;
-  height: 400px;
+  height: 70%;
   border-radius: 20px;
+  background-image: url(${props => props.imageUrl});
+  background-size: cover;
+  background-position: center;
 `
 
 export const CardTitle = styled.p`
   font-family: 'Elliot Pro';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 24px;
   text-align: center;
+  padding: 0px 20px;
   color: #ffffff;
   margin: 2px 0px;
   @media (max-width: 800px) { }
@@ -56,7 +64,7 @@ interface ButtomCardProps {
 
 export const CardButtom = styled.button<ButtomCardProps>`
   width: 100%;
-  height: 100%;
+  height: 70px;
   font-family: 'Elliot Pro';
   font-weight: 400;
   font-size:15px;

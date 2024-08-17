@@ -6,7 +6,7 @@
     "price": 999.99,
     "category": "Laptops",
     "inStock": true,
-    "imageURL": "https://m.media-amazon.com/images/I/71lpjnJzMoL._AC_SY355_.jpg"
+    "imageURL": "https://hekalsoluciones.com/hekalsoluciones/wp-content/uploads/2023/03/1.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "price": 129.99,
     "category": "Monitores",
     "inStock": false,
-    "imageURL": "https://example.com/images/monitor_samsung_24.jpg"
+    "imageURL": "https://exitocol.vtexassets.com/arquivos/ids/16411804/monitor-samsung-ips-de-24-full-hd-freesync-75hz-hdmi-f24t350.jpg?v=638106968834530000"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "price": 199.99,
     "category": "Periféricos",
     "inStock": true,
-    "imageURL": "https://example.com/images/teclado_corsair_k95.jpg"
+    "imageURL": "https://pcmastersbogota.com.co/wp-content/uploads/2021/08/20072.2-600x600.png"
   },
   {
     "id": 4,

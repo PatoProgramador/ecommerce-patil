@@ -9,7 +9,7 @@ interface ProductCardProps {
 const ProductCardComponent: React.FC<ProductCardProps> = ({ product }) => {
   return (
       <S.CardContainer>
-        <S.CardImage src={product.imageURL} alt={product.name}/>
+        <S.CardImage imageUrl={product.imageURL}/>
         <S.CardTitle>
           {product.name}
         </S.CardTitle>
