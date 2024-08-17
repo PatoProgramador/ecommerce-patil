@@ -45,6 +45,7 @@ export const HeaderImageLayout = styled.img<ImageLayoutProps>`
 export const SecondImageLayout = styled.img<ImageLayoutProps>`
   width: ${(props) => props.w || '200px'};
   height: ${(props) => props.h || '60px'};
+  cursor: pointer;
 `
 
 interface TextLayoutProps {

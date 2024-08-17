@@ -10,6 +10,7 @@ import { AppLayout } from '@app/layouts/AppLayout'
 // Vistas
 import { HomeView } from '@mod/home/HomeView'
 import ProductDetailView from '@mod/product-detail/ProductDetailView'
+import { CartView } from '@mod/cart/CartView'
 
 function App () {
   return (
@@ -28,6 +29,7 @@ function App () {
           <Routes>
             <Route path='/' element={<HomeView />} />
             <Route path='/product/:id' element={<ProductDetailView />}/>
+            <Route path='/cart' element={<CartView />} />
           </Routes>
         </AppLayout>
       </Router>

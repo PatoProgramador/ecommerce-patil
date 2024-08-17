@@ -21,13 +21,17 @@ export const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   const handleOnClick = () => {
     navigate('/')
   }
+
+  const handleOnClickCart = () => {
+    navigate('/cart')
+  }
   return (
     <Fragment>
       <S.ContainerLayout>
         <S.HeaderLayout>
           <S.TextHeaderLayou onClick={handleOnClick}>Productos</S.TextHeaderLayou>
           <S.HeaderImageLayout src={patoLogo}></S.HeaderImageLayout>
-          <S.SecondImageLayout src={cartLogo}></S.SecondImageLayout>
+          <S.SecondImageLayout onClick={handleOnClickCart} src={cartLogo}></S.SecondImageLayout>
         </S.HeaderLayout>
         {children}
         <S.FooterContainerNav>
