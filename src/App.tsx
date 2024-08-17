@@ -9,6 +9,7 @@ import { AppLayout } from '@app/layouts/AppLayout'
 
 // Vistas
 import { HomeView } from '@mod/home/HomeView'
+import ProductDetailView from '@mod/product-detail/ProductDetailView'
 
 function App () {
   return (
@@ -26,6 +27,7 @@ function App () {
         <AppLayout>
           <Routes>
             <Route path='/' element={<HomeView />} />
+            <Route path='/product/:id' element={<ProductDetailView />}/>
           </Routes>
         </AppLayout>
       </Router>

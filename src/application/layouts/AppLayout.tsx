@@ -2,6 +2,7 @@ import React, { Fragment, ReactNode } from 'react'
 import * as S from './AppLayout.styled'
 
 import { AppImgUrlAssets } from '@app/assets/app.img-url.assets'
+import { useNavigate } from 'react-router-dom'
 
 const appImgUrlAssets = new AppImgUrlAssets()
 
@@ -15,11 +16,16 @@ interface AppLayoutProps {
 }
 
 export const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
+  const navigate = useNavigate()
+
+  const handleOnClick = () => {
+    navigate('/')
+  }
   return (
     <Fragment>
       <S.ContainerLayout>
         <S.HeaderLayout>
-          <S.TextHeaderLayou>Productos</S.TextHeaderLayou>
+          <S.TextHeaderLayou onClick={handleOnClick}>Productos</S.TextHeaderLayou>
           <S.HeaderImageLayout src={patoLogo}></S.HeaderImageLayout>
           <S.SecondImageLayout src={cartLogo}></S.SecondImageLayout>
         </S.HeaderLayout>

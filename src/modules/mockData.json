@@ -33,7 +33,7 @@
     "price": 79.99,
     "category": "Periféricos",
     "inStock": true,
-    "imageURL": "https://example.com/images/mouse_logitech_g502.jpg"
+    "imageURL": "https://cometware.com/media/catalog/product/cache/502520b5e2df2494c1bb943e56026238/s/u/superior_16_2.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "price": 89.99,
     "category": "Componentes",
     "inStock": false,
-    "imageURL": "https://example.com/images/ram_kingston_hyperx.jpg"
+    "imageURL": "https://symcomputadores.com/wp-content/uploads/2022/09/5-2.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "price": 149.99,
     "category": "Almacenamiento",
     "inStock": true,
-    "imageURL": "https://example.com/images/ssd_samsung_1tb.jpg"
+    "imageURL": "https://http2.mlstatic.com/D_NQ_NP_868928-MLA46735177727_072021-O.webp"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "price": 699.99,
     "category": "Componentes",
     "inStock": true,
-    "imageURL": "https://example.com/images/gpu_nvidia_rtx_3080.jpg"
+    "imageURL": "https://i.blogs.es/213d7c/rtx3080ap/1366_2000.jpg"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "price": 109.99,
     "category": "Componentes",
     "inStock": false,
-    "imageURL": "https://example.com/images/fuente_evga_750w.jpg"
+    "imageURL": "https://http2.mlstatic.com/D_NQ_NP_754763-CBT48902263504_012022-O.webp"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "price": 69.99,
     "category": "Componentes",
     "inStock": true,
-    "imageURL": "https://example.com/images/case_nzxt_h510.jpg"
+    "imageURL": "https://http2.mlstatic.com/D_NQ_NP_606545-MLC47293116454_082021-O.webp"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "price": 179.99,
     "category": "Componentes",
     "inStock": true,
-    "imageURL": "https://example.com/images/placa_madre_asus_b550.jpg"
+    "imageURL": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/131720733_01/w=800,h=800,fit=pad"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "price": 549.99,
     "category": "Componentes",
     "inStock": false,
-    "imageURL": "https://example.com/images/procesador_amd_ryzen_5900x.jpg"
+    "imageURL": "https://pcmastersbogota.com.co/wp-content/uploads/2021/07/AMD-RYZEN-9-5900X-1.jpg"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "price": 139.99,
     "category": "Componentes",
     "inStock": true,
-    "imageURL": "https://example.com/images/enfriamiento_corsair_h100i.jpg"
+    "imageURL": "https://http2.mlstatic.com/D_NQ_NP_863683-MCO27049830794_032018-O.webp"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "price": 99.99,
     "category": "Periféricos",
     "inStock": true,
-    "imageURL": "https://example.com/images/headset_hyperx_cloud_ii.jpg"
+    "imageURL": "https://cdnx.jumpseller.com/tienda-gamer-medellin/image/26659063/71MJ3OaVqBL._AC_SL1500_.jpg?1661742080"
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "price": 329.99,
     "category": "Monitores",
     "inStock": true,
-    "imageURL": "https://example.com/images/monitor_asus_27.jpg"
+    "imageURL": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/125940936_01/public"
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "price": 79.99,
     "category": "Periféricos",
     "inStock": false,
-    "imageURL": "https://example.com/images/camara_logitech_c920.jpg"
+    "imageURL": "https://http2.mlstatic.com/D_NQ_NP_713949-MLU69214229772_052023-O.webp"
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "price": 129.99,
     "category": "Redes",
     "inStock": true,
-    "imageURL": "https://example.com/images/router_asus_rt_ac68u.jpg"
+    "imageURL": "https://http2.mlstatic.com/D_NQ_NP_990176-MCO31040825475_062019-O.webp"
   },
   {
     "id": 17,
@@ -150,7 +150,7 @@
     "price": 119.99,
     "category": "Impresoras",
     "inStock": true,
-    "imageURL": "https://example.com/images/impresora_hp_multifuncional.jpg"
+    "imageURL": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/121752534_01/w=800,h=800,fit=pad"
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "price": 169.99,
     "category": "Almacenamiento",
     "inStock": false,
-    "imageURL": "https://example.com/images/ssd_samsung_t5.jpg"
+    "imageURL": "https://m.media-amazon.com/images/I/61xIbNi5t1L.jpg"
   },
   {
     "id": 19,
@@ -168,7 +168,7 @@
     "price": 14.99,
     "category": "Accesorios",
     "inStock": true,
-    "imageURL": "https://example.com/images/cable_hdmi_10ft.jpg"
+    "imageURL": "https://http2.mlstatic.com/D_NQ_NP_604312-MCO71399403065_082023-O.webp"
   },
   {
     "id": 20,
@@ -177,6 +177,6 @@
     "price": 129.99,
     "category": "Accesorios",
     "inStock": true,
-    "imageURL": "https://example.com/images/microfono_blue_yeti.jpg"
+    "imageURL": "https://m.media-amazon.com/images/I/61egnO8q6ZL.jpg"
   }
 ]

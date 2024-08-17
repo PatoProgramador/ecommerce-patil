@@ -14,4 +14,17 @@ export class ProductService {
       throw new Error('No hay productos por mostrar :(')
     }
   }
+
+  static getProductById (id:number): IProductDto {
+    let res
+
+    const response: IProductDto | undefined = AppApiGateway.getProductById(id)
+
+    if (response !== undefined) {
+      res = response
+      return res
+    } else {
+      throw new Error('No existe el producto con este id :(')
+    }
+  }
 }

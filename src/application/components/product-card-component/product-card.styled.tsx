@@ -32,6 +32,7 @@ export const CardImage = styled.div<CardImageProps>`
   background-image: url(${props => props.imageUrl});
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 `
 
 export const CardTitle = styled.p`

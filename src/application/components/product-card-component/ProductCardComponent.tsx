@@ -1,15 +1,21 @@
 import { IProductDto } from '@mod/product-detail/services/product.dto'
 import * as S from './product-card.styled'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 interface ProductCardProps {
   product: IProductDto;
 }
 
 const ProductCardComponent: React.FC<ProductCardProps> = ({ product }) => {
+  const navigate = useNavigate()
+
+  const handleOnClick = () => {
+    navigate(`/product/${product.id}`)
+  }
   return (
       <S.CardContainer>
-        <S.CardImage imageUrl={product.imageURL}/>
+        <S.CardImage onClick={handleOnClick} imageUrl={product.imageURL}/>
         <S.CardTitle>
           {product.name}
         </S.CardTitle>

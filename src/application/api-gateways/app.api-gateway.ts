@@ -21,4 +21,10 @@ export class AppApiGateway {
 
     return products
   }
+
+  static getProductById (id: number):IProductDto | undefined {
+    const product: IProductDto | undefined = mockData.find(data => data.id === id)
+
+    return product
+  }
 }

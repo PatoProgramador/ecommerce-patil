@@ -26,6 +26,7 @@ export const TextHeaderLayou = styled.p`
   color: aliceblue;
   padding: 0px 15px;
   margin: 5px;
+  cursor: pointer;
 `
 
 interface ImageLayoutProps {
