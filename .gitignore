@@ -29,6 +29,5 @@ yarn-error.log*
 
 # Personal notes
 ref/
-package.json
 yarn.lock
 .vscode
